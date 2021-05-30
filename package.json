@@ -11,7 +11,8 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
