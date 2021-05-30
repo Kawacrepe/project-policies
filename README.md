@@ -4,7 +4,7 @@ The main goal of this project is to help people ensure they're codebase followed
 
 # Expected functionnalities
 
-- Quickly setup repository based on predefined rules
+- Quickly setup constituents elements needed for a project based on custom rules
 - Check package.json attributes
 - Reinforce git hooks ? especially pre-push ?
 - Use tool such as nsecure or others and expose the result ?
