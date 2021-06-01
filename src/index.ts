@@ -1,5 +1,9 @@
-function helloWorld () {
-  console.log('Hello World!')
+import { checkPackageAttributes } from './package'
+
+async function main() {
+  console.log(await checkPackageAttributes())
 }
 
-export { helloWorld }
+main()
+
+export { checkPackageAttributes }

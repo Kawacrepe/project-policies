@@ -11,3 +11,10 @@ The main goal of this project is to help people ensure they're codebase followed
 - Check a bunch of project, typically every repository inside a specific github organization ?
 - Help developers to create custom based rules to check differents things in they're codebase
 
+# Check package.json attributes
+
+Check package.json attributes, such as:
+- engines
+- husky => prepush
+- author
+- description
