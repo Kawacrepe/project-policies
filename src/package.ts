@@ -3,7 +3,7 @@ import { getFile } from './utils/util'
 export async function checkPackageAttributes(configAttributes) {
   const packageFile = await getFile('package.json')
   let errorCount = 0
-  const errorMessage = (attrib) => `There is an error at ${attrib}`
+  const errorMessage = (attrib) => `There is an error at ${attrib} inside package.json`
 
   for(const attrib of Object.keys(configAttributes)) {
     if(!packageFile[attrib]) {
@@ -12,8 +12,8 @@ export async function checkPackageAttributes(configAttributes) {
     }
   }
   if(errorCount > 0) { 
-    console.log("Everything went well on package.json analysis")
     return true 
   }
+  console.log("Everything went well on package.json analysis")
   return false
 }
