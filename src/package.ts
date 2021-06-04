@@ -11,6 +11,7 @@ export async function checkPackageAttributes(configAttributes) {
       errorCount += 1
     }
   }
+  
   if(errorCount > 0) { 
     return true 
   }
