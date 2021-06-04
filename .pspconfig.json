@@ -1,0 +1,10 @@
+{
+  "package.json": {
+    "author": true,
+    "engines": true,
+    "license": [true, ["MIT"]]
+  },
+  "foo": {
+    "bar": "foo"
+  }
+}

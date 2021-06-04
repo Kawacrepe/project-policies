@@ -18,3 +18,18 @@ Check package.json attributes, such as:
 - husky => prepush
 - author
 - description
+
+# Config file 
+
+To customize this project, you need to setup a **.pspconfig.json** file.
+
+There is an example 
+```json
+{
+  "package.json": {
+    "author": true,
+    "engines": true,
+    "license": [true, ['MIT']]
+  }
+}
+```

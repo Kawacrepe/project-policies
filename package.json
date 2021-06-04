@@ -20,6 +20,9 @@
     "url": "git+https://github.com/Kawacrepe/project-policies.git"
   },
   "author": "Vincent Dhennin",
+  "engines": {
+    "node": ">14"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kawacrepe/project-policies/issues"

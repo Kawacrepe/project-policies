@@ -4,9 +4,12 @@ import { readFile } from 'fs/promises'
 export async function getFile(FILE): Promise<any> {
   const CWD = process.cwd()
   let userFile = await readFile(join(CWD, FILE));
-  const fileJson = JSON.parse(userFile.toString())
-
-  return {
-    fileJson
+  let fileJson = Object.create(null)
+  try {
+    fileJson = JSON.parse(userFile.toString())
+  } catch(e) {
+    // Throw error onto console
+    return e
   }
+  return fileJson
 }
